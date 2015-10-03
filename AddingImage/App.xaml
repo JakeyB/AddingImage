@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="Cyan" />
+        </Style>
+
+        <Style TargetType="PasswordBox">
+            <Setter Property="Background" Value="Cyan" />
+        </Style>
+
     </Application.Resources>
 </Application>

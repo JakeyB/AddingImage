@@ -17,8 +17,11 @@
         <Label x:Name="label2" Foreground="#FFE0E0E0" Content="Surname" HorizontalAlignment="Left" Margin="22,111,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label3" Foreground="#FFE0E0E0" Content="Age" HorizontalAlignment="Left" Margin="48,157,0,0" VerticalAlignment="Top"/>
         <Button x:Name="Save_btn" Content="Save" HorizontalAlignment="Left" Height="26" Margin="117,213,0,0" VerticalAlignment="Top" Width="70" Click="Save_btn_Click"/>
-        <Button x:Name="Update_button" Content="Update" Width="75" Click="Update_button_Click" Margin="37,213,180,29"/>
+        <Button x:Name="Update_button" Content="Update" Width="75" Click="Update_button_Click" Margin="22,213,195,29"/>
         <Button x:Name="Delete_button" Content="Delete" HorizontalAlignment="Left" Height="26" Margin="206,213,0,0" VerticalAlignment="Top" Width="66" Click="Delete_button_Click"/>
+
+     
+        
 
     </Grid>
 </Window>

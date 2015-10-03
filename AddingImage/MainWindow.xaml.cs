@@ -56,22 +56,14 @@ namespace AddingImage
 
                 // If Passwords match open new window *** Will need to close the old window ***
                 if(count == 1){
-                    MessageBox.Show("Username and password are correct!");
-
-                    //Hide login page!
-                    this.Hide();
-
                     // Close connection to database
                     sqliteCon.Close();
 
-                    // Create an object of the new WPF window
-                    Window1 sec = new Window1();
-                    sec.ShowDialog();
+                    // Create new window bject, open the window and close old window
+                    Main sec = new Main();
+                    sec.Show();
+                    Close();
                 } 
-                if (count > 1)
-                {
-                    MessageBox.Show("Duplicate Username and password, try again");  
-                }
                 if (count < 1)
                 {
                     MessageBox.Show("Username or password incorrect!");
@@ -94,6 +86,16 @@ namespace AddingImage
             Image img = (Image)sender;
             DoubleAnimation animation = new DoubleAnimation(1, TimeSpan.FromSeconds(2));
             img.BeginAnimation(Image.OpacityProperty, animation);
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+            // Create an object of the new WPF window
+            SignUp signUp = new SignUp();
+            signUp.Show();
+            Close();
         }
     }
 }

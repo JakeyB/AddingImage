@@ -1,0 +1,16 @@
+﻿<Window x:Class="AddingImage.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:AddingImage"
+        mc:Ignorable="d"
+        Title="Main" Height="300" Width="300">
+    <Grid>
+        <!-- Background Image  -->
+        <Image gif:ImageBehavior.AnimatedSource="/Images/giphy.gif" Stretch="UniformToFill"/>
+        <Button x:Name="Update_button" Content="Update" HorizontalAlignment="Left" Height="26" Margin="100,223,0,0" VerticalAlignment="Top" Width="102" Click="Update_button_Click"/>
+
+    </Grid>
+</Window>
